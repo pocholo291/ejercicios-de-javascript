@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+//Leer un número entero de tres dígitos y determinar a cuánto es igual la suma de sus dígitos. 
+ var num=parseInt(prompt("ingrese un numero de tres digitos"));
+ if (num>=100 && num<1000) {
+ var dig1=Math.floor(num/100);
+ var dig2=num%100;
+ dig2=Math.floor(dig2/10);
+ var dig3=num%10;
+ var suma=parseInt(dig1)+parseInt(dig2)+parseInt(dig3);
+ document.write(" la suma de los tres digitos es "+suma);
+
+ }
+ else{
+ 	document.write("el numero es invalido");
+ }
+</script>
+</body>
+</html>

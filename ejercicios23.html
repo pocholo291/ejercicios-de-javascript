@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//Leer un número entero de tres dígitos y determinar cuántos dígitos primos tiene.
+var num=prompt("ingrese el numero de  tres digitos");
+var dig1=Math.floor(num/100);
+var dig2=parseInt(num)%100;
+dig2 =Math.floor(dig2/10);
+var dig3=parseInt(num)%10;
+var contador=0;
+
+if ( num >=100 && num <1000) {
+    if (dig1==2| dig1==3 | dig1==5| dig1==7) {
+    	contador=contador+1;
+    }
+    if (dig2==2| dig2==3 | dig2==5| dig2==7) {
+    	contador=contador+1;
+}
+if (dig3==2| dig3==3 | dig3==5| dig3==7) {
+    	contador=contador+1;
+}
+if (contador==1) {
+	document.write("El numero tiene "+contador+" digito par");
+} 
+else{
+ document.write("El numero tiene "+contador+" digitos pares");
+}
+}
+
+else{
+	document.write(" el numero no son de tres digitos");
+}
+</script>
+</body>
+</html>

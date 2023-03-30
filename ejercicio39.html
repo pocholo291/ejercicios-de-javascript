@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//Leer tres números enteros de tres dígitos y determinar si el penúltimo dígito de los tres números es igual.
+var num=prompt("ingreseme  tres digitos");
+var num2=prompt("ingreseme el segundo numero");
+var num3=prompt("ingreseme el tecer numero");
+var dig1=parseInt(num)%100;
+dig1 =Math.floor(dig1/10);
+var dig2=parseInt(num2)%100;
+dig2 =Math.floor(dig2/10);
+var dig3=parseInt(num3)%100;
+dig3 =Math.floor(dig3/10);
+
+if (num>=100 & num<=999 &num2>=100 & num2<=999 &num3>=100 & num3<=999) {
+	if (dig1==dig2 &dig1==dig3 &dig2==dig3) {
+		document.write("los tres penultimos digitos  de los tres numeros dados son iguales");
+	}
+	else{
+		document.write("los tres penultimos digitos  de los tres numeros dados no son  iguales");
+	}
+}
+
+ 
+else{
+	document.write("alguno o todos los numeros ingresados son mayores de tres digitos");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+// Leer un número entero de dos dígitos y determinar si un dígito es múltiplo del otro
+var num=prompt("ingrese un numero de dos digitos");
+
+num=parseInt(num);
+var digt1=Math.floor(num/10);
+var digt2=num%10;
+
+if(digt1==2 | digt1==3 | digt1==5 | digt1==7 ){
+ document.write("El primer digito es primo");
+}
+else if (digt2==2 | digt2==3 | digt2==5 | digt2==7) {
+ document.write("El segundo digito es primo");	
+}
+else{
+ document.write("los digitos no son primos");
+}
+
+
+
+</script>
+</body>
+</html>

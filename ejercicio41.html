@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//Leer dos números enteros de dos dígitos y determinar si la diferencia entre los dos es un número primo.
+var num = prompt("Digame un numero entero de dos digitos")
+cont=0;
+ var num2=prompt("digame otro numero");
+
+var resta=parseInt(num)-parseInt(num2);
+resta=parseInt(resta);
+
+if(resta>=10 & resta<100){
+for(x=2;x<=resta-1;x++){
+    if(resta%x==0){
+        cont=1
+    }
+
+}
+
+    if(cont==1){
+     document.write("El numero no es primo");
+    }
+    if(cont==0){
+        document.write("El numero es primo");
+    }
+
+}
+else{
+    document.write("El numero es menor de 3 digitos");
+}
+</script>
+</body>
+</html>

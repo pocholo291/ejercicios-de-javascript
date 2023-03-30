@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//Leer un número entero de dos dígitos, guardar cada dígito en una variable diferente y luego mostrarlas en pantalla
+ var num=prompt("ingrese un numero entero de dos digitos");
+ num=parseInt(num);
+ dig1=Math.floor(num /10);
+ dig2=parseInt(num)%10;
+ 
+ if (num>=10 &num<=99) {
+ 	document.write("el primer digito es "+dig1);
+ 	document.write("<br>");
+
+ 	document.write("el segundo digito es "+dig2);
+}
+else{
+	document.write("el numero es mayor o menor de dos digitos");
+}
+</script>
+</body>
+</html>

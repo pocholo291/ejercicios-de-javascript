@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+// Leer un número entero de cuatro dígitos y determinar cuántos dígitos pares tiene
+var num=prompt("ingreseme cuatros numeros");
+var dig1=Math.floor(num/1000);
+var dig2=Math.floor(num/100);
+dig2 =parseInt(dig2)%10;
+var dig3=parseInt(num)%100;
+dig3=Math.floor(dig3/10);
+var dig4=parseInt(num)%10;
+var cont1=0;
+
+
+if(num<10000 & num>=1000){
+    if(dig1%2==0){
+        cont1=cont1+1;
+    }
+ 
+    if(dig2%2==0){
+        cont1=cont1+1;
+    }
+   
+    if(dig3%2==0){
+        cont1=cont1+1;
+    }
+  
+    if(dig4%2==0){
+        cont1=cont1+1;
+    }
+   
+    if (cont1==1) {
+    	document.write("su numero tienen "+cont1+" numero par");
+    
+    }
+    else{
+     document.write("su numero tienen "+cont1+" numeros pares");
+    
+    }
+ 
+    
+    }
+    else{
+        document.write("El numero es mayor o menor a 4 digitos");
+    }
+ </script>
+</body>
+</html>

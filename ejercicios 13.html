@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+//Leer dos números enteros de dos dígitos y determinar si la suma de los dos números origina un número par.
+ var a=parseInt(prompt("ingrese un numero de dos digitos"));
+ var dig1=Math.floor(a/10);
+ var dig2=a%10;
+ var num=parseInt(dig1)+parseInt(dig2);
+ if (num%2==0) {
+ document.write("la suma de los dos numeros da como resultado un numero par");
+
+ }
+ else{
+ document.write("la suma de los dos numero no es par");
+ }
+</script>
+</body>
+</html>

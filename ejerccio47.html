@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+/*Leer dos números enteros de dos dígitos cada uno y si la diferencia entre los dos 
+números es par mostrar en pantalla la suma de los dígitos de los números, si dicha diferencia 
+es un número primo menor que 10 entonces mostrar en pantalla el producto de los dos 
+números y si la diferencia entre ellos terminar en 4 mostrar en pantalla todos los dígitos por 
+separado.*/
+var num=prompt("ingreseme el primer numero");
+var num2=prompt("ingrseme el segundo numero");
+var rest=parseInt(num)-parseInt(num2);
+var dig1=Math.floor(num/10);
+var dig2=parseInt(num)%10;
+var dig3=Math.floor(num/10);
+var dig4=parseInt(num)%10;
+
+if (rest%2==0) {
+	var suma=parseInt(dig1)+parseInt(dig2)+parseInt(dig3)+parseInt(dig4);
+	document.write("la  suma de estos digitos es "+suma);
+}
+</script>
+</body>
+</html>

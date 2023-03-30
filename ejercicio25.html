@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//Leer un número entero de tres dígitos y determinar si alguno de sus dígitos es igual a la suma de los otros dos.
+var num=prompt("ingreseme  numeros de tres digitos");
+var dig1=Math.floor(num/100);
+var dig2=parseInt(num)%100;
+dig2=Math.floor(dig2/10);
+var dig3=parseInt(num)%10;
+
+
+if (num<1000 && num>=100) {
+ if (dig1+dig2==dig3) {
+ 	document.write("la suma de los dos primeros digitos es igual al tercer digito");
+ }
+ if (dig1+dig3==dig2) {
+ 	document.write("la suma del primer y ultimo digito es igual  al segundo digito ");
+ }
+ if (dig2+dig3==dig1) {
+ 	document.write("la suma de los dos ultimos digitos es igual al primer digito");
+ }
+}
+else{
+	document.write("el numero es invalido");
+}
+</script>
+</body>
+</html>
